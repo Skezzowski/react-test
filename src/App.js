@@ -2,6 +2,8 @@ import React from "react";
 
 import Table from "./Table";
 import Form from "./Form";
+import Clock from "./Clock";
+import SpaceData from "./Solarsysteam";
 
 class App extends React.Component {
   state = {
@@ -29,6 +31,8 @@ class App extends React.Component {
           removeCharacter={this.removeCharacter}
         ></Table>
         <Form handleSubmit={this.handleSubmit} />
+        <Clock></Clock>
+        <SpaceData></SpaceData>
       </div>
     );
   }
